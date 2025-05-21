@@ -21,7 +21,7 @@ Unity UI Toolkit – felhasználói felülethez
 
 Physically Based Rendering (PBR) – élethű anyagokhoz
 
-📌 Fejlesztési tervek
+## 📌 Fejlesztési tervek
 Holdak és gyűrűk hozzáadása
 
 Oktatási mód felhasználói kérdésekkel
