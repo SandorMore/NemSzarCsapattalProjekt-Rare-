@@ -11,6 +11,24 @@ Ez a projekt egy interaktív 3D Naprendszer szimuláció Unity-ben, amely bemuta
 - ⏱️ Idő gyorsítása/lassítása a mozgás szemléltetésére
 - 🎮 Kamera mozgatás és szabad nézet
 - 🧠 Információs panel bolygónként (tömeg, átmérő, pálya stb.)
+
+## 🧠 Használt technológiák
+Unity 3D – motor és renderelés
+
+C# – szkriptekhez
+
+Unity UI Toolkit – felhasználói felülethez
+
+Physically Based Rendering (PBR) – élethű anyagokhoz
+
+📌 Fejlesztési tervek
+Holdak és gyűrűk hozzáadása
+
+Oktatási mód felhasználói kérdésekkel
+
+VR támogatás
+
+Magyar és angol nyelvű felület
 👍
 
 
