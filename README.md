@@ -1,105 +1,34 @@
 # NemSzarCsapattalProjekt-Rare-
+# 🌌 Naprendszer Szimuláció – Unity Projekt
 
-🎯 Projektcél
-Egy C++ nyelven, OpenGL grafikus motorral és egy minimális UI-val rendelkező fizikai motor megvalósítása, amelyben kis szimulációkon keresztül lehet megfigyelni, hogyan hatnak különböző fizikai erők (gravitáció, ütközések, rugók stb.) különböző objektumokra.
+Ez a projekt egy interaktív 3D Naprendszer szimuláció Unity-ben, amely bemutatja a Nap és a bolygók mozgását és méretarányait. A cél a csillagászati ismeretterjesztés és a vizuális élmény kombinálása egy oktatási célú alkalmazásban.
 
-🧱 Projekt felépítése
-1. Alaptechnológiák
-C++ – fő programnyelv (nagy teljesítmény, alacsony szintű kontroll)
+## 🔭 Funkciók
 
-OpenGL – grafikus megjelenítéshez
+- 🌞 Valósághű Nap és bolygók modelljei
+- 🪐 Keringési pályák animációval
+- 📏 Méret- és távolságarányok (opcionálisan skálázva a láthatóság érdekében)
+- ⏱️ Idő gyorsítása/lassítása a mozgás szemléltetésére
+- 🎮 Kamera mozgatás és szabad nézet
+- 🧠 Információs panel bolygónként (tömeg, átmérő, pálya stb.)
 
-GLFW / SDL – ablakkezeléshez, bemenetkezeléshez
+## 🧠 Használt technológiák
+Unity 3D – motor és renderelés
 
-ImGui – az UI elemekhez (popup ablak, slider, gombok stb.)
+C# – szkriptekhez
 
-GLM – vektorműveletekhez, mátrixokhoz (OpenGL barát matematikai könyvtár)
+Unity UI Toolkit – felhasználói felülethez
 
-2. Fizikai motor komponensei
-Objektumok
-Rigid body: tömeg, sebesség, gyorsulás, erők
+Physically Based Rendering (PBR) – élethű anyagokhoz
 
-Alakzat: kör, négyzet, háromszög stb.
+## 📌 Fejlesztési tervek
+Holdak és gyűrűk hozzáadása
 
-Tulajdonságok: súrlódás, rugalmasság, tömeg
+Oktatási mód felhasználói kérdésekkel
 
-Fizikai hatások
-Gravitáció (állandó gyorsulás lefelé)
+VR támogatás
 
-Ütközésdetektálás (AABB vagy SAT)
-
-Ütközéskezelés (impulzus, energiaátadás)
-
-Rugóerő (Hooke-törvény)
-
-Damping (csillapítás, pl. levegőellenállás)
-
-3. UI felület (ImGui)
-Popup window-ban állítható paraméterek:
-
-Új objektum hozzáadása (gomb)
-
-Objektum pozíciójának, tömegének, kezdősebességének beállítása
-
-Gravitáció ki/be kapcsolása
-
-Damping mértéke (csúszka)
-
-Rugó csatlakoztatása két test között
-
-„Pause” / „Step” mód (lépésenkénti szimuláció)
-
-„Reset scene” / „Clear all objects”
-
-4. Megjelenítés OpenGL-lel
-2D renderelés egyszerűbb: kvázi top-down nézet
-
-Objektumokat alakzatként rajzoljuk ki (GL_TRIANGLES vagy GL_QUADS)
-
-Színek típustól vagy erőtől függően változhatnak
-
-Kamera mozgatása / zoom (egér + scroll)
-
-📌 Példa használati forgatókönyv
-Elindítod a programot → megjelenik egy üres világ.
-
-Kattintasz a "New Object" gombra → megjelenik egy négyzet a képernyőn.
-
-Az UI popup ablakban állítod:
-
-tömeg = 5 kg
-
-kezdősebesség = [2, 0]
-
-gravitáció = bekapcsolva
-
-A "Start Simulation" gombra kattintva az objektum elkezd esni, és pattog a talajon.
-
-Újabb objektumot is hozzáadsz, rugóval összekötöd őket.
-
-A damping csúszkával megnézed, hogyan viselkedik a rendszer különböző csillapítással.
-
-🧠 Fejlesztési fókuszpontok
-Modularitás: külön modul legyen a fizikai motor, a megjelenítés, az UI
-
-Debug mód: megjeleníti az erővektorokat (piros nyilak stb.)
-
-Profilozás: időmérés frame-ek között
-
-Egységtesztek a fizikai motorhoz
-
-💡 Extrák, ha van idő:
-Objektum forgása és nyomaték
-
-3D támogatás (OpenGL miatt viszonylag egyszerű, de számolás nehezebb)
-
-Mentés / betöltés JSON-be
-
-Erővonal-megjelenítés
-
-Interaktív objektummozgatás (egérrel)
-
-
+Magyar és angol nyelvű felület
 👍
 
 
