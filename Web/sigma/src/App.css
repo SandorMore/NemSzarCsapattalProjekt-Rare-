@@ -17,8 +17,10 @@ body, .app-container {
 }
 
 header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   padding: 2rem 1rem 1rem 1rem;
-  text-align: center;
   background: #222;
   border-bottom: 1px solid #333;
 }
@@ -37,8 +39,9 @@ main {
   min-height: 80vh;
   padding: 2rem 1rem;
   gap: 2rem;
-  width: 100%;
+  width: 100%; /* Changed from 100vw to 100% */
   position: relative;
+  box-sizing: border-box;
 }
 
 .logo {
@@ -92,7 +95,7 @@ main {
   box-shadow: 0 2px 16px #0008;
   max-width: 320px;
   width: 100%;
-  margin-left: auto; /* Pushes gallery to the far right */
+  align-self: flex-start; /* <-- Change this line */
 }
 
 .gallery-img {
@@ -156,10 +159,8 @@ main {
 }
 
 .download-btn {
-  position: fixed;
-  top: 2rem;
-  right: 2rem;
-  z-index: 200;
+  position: static;
+  margin: 0;
   background: #232323;
   color: #eee;
   border: none;
@@ -168,11 +169,17 @@ main {
   font-size: 1.1rem;
   cursor: pointer;
   box-shadow: 0 2px 8px #0006;
-  transition: background 0.2s;
+  transition: background 0.2s, color 0.2s;
+  text-decoration: none;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .download-btn:hover {
   background: #444;
+  color: #fff;
 }
 
 .selected-image-content {
@@ -206,10 +213,8 @@ main {
 }
 
 .github-btn {
-  position: fixed;
-  top: 2rem;
-  left: 2rem;
-  z-index: 200;
+  position: static;
+  margin: 0;
   background: #232323;
   color: #eee;
   border: none;
@@ -228,6 +233,36 @@ main {
 
 .github-btn:hover {
   background: #444;
+  color: #fff;
+}
+
+.about-section {
+  background: #232323;
+  color: #eee;
+  margin: 3rem auto 2rem auto;
+  padding: 2.5rem 2rem;
+  border-radius: 1rem;
+  max-width: 900px;
+  box-shadow: 0 2px 16px #0008;
+  text-align: center;
+  font-size: 1.15rem;
+}
+
+.about-section h2 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.about-section a {
+  color: #8ab4f8;
+  text-decoration: underline;
+  transition: color 0.2s;
+}
+
+.about-section a:hover {
   color: #fff;
 }
 

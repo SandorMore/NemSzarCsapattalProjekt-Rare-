@@ -59,18 +59,20 @@ function App() {
 
 	return (
 		<div className="app-container">
-			<a
-				className="github-btn"
-				href="https://github.com/SandorMore/NemSzarCsapattalProjekt-Rare-"
-				target="_blank"
-				rel="noopener noreferrer"
-			>
-				Github
-			</a>
-			<button className="download-btn" onClick={handleDownload}>
-				Download
-			</button>
 			<header>
+				<div className="header-buttons">
+					<a
+						className="github-btn"
+						href="https://github.com/SandorMore/NemSzarCsapattalProjekt-Rare-"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						Github
+					</a>
+					<button className="download-btn" onClick={handleDownload}>
+						Download
+					</button>
+				</div>
 				<h1>Naprendszer Vizualizálás</h1>
 			</header>
 			<main>
@@ -106,6 +108,25 @@ function App() {
 					))}
 				</div>
 			</main>
+			<section className="about-section">
+				<h2>About This Project</h2>
+				<p>
+					This Solar System Visualization project was created by the NemSzarCsapattal team as a demonstration of interactive web development using React and TypeScript.
+					It features a gallery of images, a modern dark UI, and simple file download functionality.
+					The goal is to provide an engaging and visually appealing way to explore and present information.
+				</p>
+				<p>
+					You can find the full source code and contribute on our{' '}
+					<a
+						href="https://github.com/SandorMore/NemSzarCsapattalProjekt-Rare-"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						GitHub repository
+					</a>
+					.
+				</p>
+			</section>
 		</div>
 	)
 }
