@@ -18,7 +18,7 @@ public class Earth : PlanetLegacy
 
     private double CalculateRotationSpeed()
     {
-        return (2 * Math.PI * orbitalRadius) / orbitalPeriod / 360 / 24;
+        return (2 * Math.PI * orbitalRadius) / orbitalPeriod / 360 / 24 ;
     }
 }
 
