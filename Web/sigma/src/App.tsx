@@ -47,6 +47,16 @@ const images = [
 function App() {
 	const [selected, setSelected] = useState<number | null>(null)
 
+	const handleDownload = () => {
+		const element = document.createElement('a')
+		const file = new Blob(['test'], { type: 'text/plain' })
+		element.href = URL.createObjectURL(file)
+		element.download = 'test.txt'
+		document.body.appendChild(element)
+		element.click()
+		document.body.removeChild(element)
+	}
+
 	return (
 		<div className="app-container">
 			<a
@@ -57,7 +67,9 @@ function App() {
 			>
 				Github
 			</a>
-			<button className="download-btn">Download</button>
+			<button className="download-btn" onClick={handleDownload}>
+				Download
+			</button>
 			<header>
 				<h1>Naprendszer Vizualizálás</h1>
 			</header>
