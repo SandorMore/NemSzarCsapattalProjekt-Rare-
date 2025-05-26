@@ -14,6 +14,7 @@ public class Sun : PlanetLegacy
     void Update()
     {
         transform.Rotate(Vector3.up, (float)(rotationSpeed * Time.deltaTime));
+        transform.position = Vector3.zero;
     }
     private double CalculateRotationSpeed()
     {

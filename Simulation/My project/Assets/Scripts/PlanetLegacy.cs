@@ -5,6 +5,7 @@ using UnityEngine.Rendering;
 
 public abstract class PlanetLegacy : MonoBehaviour
 {
+
     #region Adatok
     public double mass;
     public double radius;
@@ -13,6 +14,11 @@ public abstract class PlanetLegacy : MonoBehaviour
     public double orbitalPeriod;
     public double orbitalRadius; // distance form sun
     public double sizeScale;
+    #endregion
+    #region OrbitAdatok
+    // public GameObject Sun = GameObject.FindWithTag("Sun");
+
+
     #endregion
 
 }
