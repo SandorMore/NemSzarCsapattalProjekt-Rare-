@@ -2,6 +2,7 @@ import React from 'react';
 import styled from '@emotion/styled';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
+import { useLanguage } from '../context/LanguageContext';
 
 const GallerySection = styled.section`
   padding: 8rem 0;
@@ -23,38 +24,31 @@ const Title = styled(motion.h2)`
   -webkit-text-fill-color: transparent;
 `;
 
-const VideoContainer = styled(motion.div)`
-  position: relative;
-  width: 100%;
-  margin-bottom: 4rem;
-  border-radius: 20px;
-  overflow: hidden;
-  aspect-ratio: 16/9;
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-
-  iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: none;
-  }
-`;
-
 const Grid = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
 `;
 
-const Screenshot = styled(motion.div)`
+const GalleryCard = styled(motion.div)`
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 2rem;
+  transition: transform 0.3s ease;
+  
+  &:hover {
+    transform: translateY(-5px);
+    border-color: var(--color-primary);
+  }
+`;
+
+const ImageContainer = styled.div`
   position: relative;
   border-radius: 10px;
   overflow: hidden;
   aspect-ratio: 16/9;
-  cursor: pointer;
+  margin-bottom: 1.5rem;
   
   img {
     width: 100%;
@@ -68,62 +62,98 @@ const Screenshot = styled(motion.div)`
   }
 `;
 
+const CardTitle = styled.h3`
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--color-text);
+`;
+
+const CardDescription = styled.p`
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+`;
+
 const Gallery = () => {
+  const { t } = useLanguage();
   const [ref, inView] = useInView({
     threshold: 0.1,
     triggerOnce: true
   });
 
-  const StyledGallerySection = GallerySection as any;
-  const StyledContainer = Container as any;
-  const StyledTitle = Title as any;
-  const StyledVideoContainer = VideoContainer as any;
-  const StyledGrid = Grid as any;
-  const StyledScreenshot = Screenshot as any;
-
-  const screenshots = [
-    { src: "/screenshot1.jpg", alt: "Solar System Overview" },
-    { src: "/screenshot2.jpg", alt: "Planet Detail View" },
-    { src: "/screenshot3.jpg", alt: "Orbital Mechanics Visualization" },
-    { src: "/screenshot4.jpg", alt: "Particle Effects Demo" },
+  const galleryItems = [
+    {
+      image: "/screenshot1.jpg",
+      titleKey: "gallery.card1.title",
+      descriptionKey: "gallery.card1.description"
+    },
+    {
+      image: "/screenshot2.jpg",
+      titleKey: "gallery.card2.title",
+      descriptionKey: "gallery.card2.description"
+    },
+    {
+      image: "/screenshot3.jpg",
+      titleKey: "gallery.card3.title",
+      descriptionKey: "gallery.card3.description"
+    },
+    {
+      image: "/screenshot4.jpg",
+      titleKey: "gallery.card4.title",
+      descriptionKey: "gallery.card4.description"
+    }
   ];
 
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.2
+      }
+    }
+  };
+
+  const itemVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.6,
+        ease: "easeOut"
+      }
+    }
+  };
+
   return (
-    <StyledGallerySection ref={ref}>
-      <StyledContainer>
-        <StyledTitle
+    <GallerySection ref={ref}>
+      <Container>
+        <Title
           initial={{ opacity: 0, y: 30 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8 }}
         >
-          Gallery
-        </StyledTitle>
-        <StyledVideoContainer
-          initial={{ opacity: 0, y: 30 }}
-          animate={inView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.8, delay: 0.2 }}
+          {t('gallery.title')}
+        </Title>
+        <motion.div
+          variants={containerVariants}
+          initial="hidden"
+          animate={inView ? "visible" : "hidden"}
         >
-          <iframe
-            src="https://www.youtube.com/embed/your-video-id"
-            title="Project Demo"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-          />
-        </StyledVideoContainer>
-        <StyledGrid>
-          {screenshots.map((screenshot, index) => (
-            <StyledScreenshot
-              key={screenshot.alt}
-              initial={{ opacity: 0, scale: 0.9 }}
-              animate={inView ? { opacity: 1, scale: 1 } : {}}
-              transition={{ duration: 0.5, delay: 0.3 + index * 0.1 }}
-            >
-              <img src={screenshot.src} alt={screenshot.alt} />
-            </StyledScreenshot>
-          ))}
-        </StyledGrid>
-      </StyledContainer>
-    </StyledGallerySection>
+          <Grid>
+            {galleryItems.map((item, index) => (
+              <GalleryCard key={item.titleKey} variants={itemVariants}>
+                <ImageContainer>
+                  <img src={item.image} alt={t(item.titleKey)} />
+                </ImageContainer>
+                <CardTitle>{t(item.titleKey)}</CardTitle>
+                <CardDescription>{t(item.descriptionKey)}</CardDescription>
+              </GalleryCard>
+            ))}
+          </Grid>
+        </motion.div>
+      </Container>
+    </GallerySection>
   );
 };
 

@@ -26,6 +26,14 @@ const translations = {
 
     // Gallery
     'gallery.title': 'Gallery',
+    'gallery.card1.title': 'Celestial Dance',
+    'gallery.card1.description': 'Experience the mesmerizing orbital ballet of planets as they traverse their cosmic paths around the central star.',
+    'gallery.card2.title': 'Planetary Details',
+    'gallery.card2.description': 'Dive deep into the intricate details of each planet, from atmospheric compositions to surface features.',
+    'gallery.card3.title': 'Orbital Mechanics',
+    'gallery.card3.description': 'Witness the complex interplay of gravitational forces that shape the paths of celestial bodies.',
+    'gallery.card4.title': 'Cosmic Phenomena',
+    'gallery.card4.description': 'Marvel at the stunning visual effects that bring space phenomena to life in our simulation.',
 
     // Development
     'development.title': 'Development Process',
@@ -66,6 +74,14 @@ const translations = {
 
     // Gallery
     'gallery.title': 'Galéria',
+    'gallery.card1.title': 'Égi Tánc',
+    'gallery.card1.description': 'Tapasztalja meg a bolygók lenyűgöző keringési táncát, ahogy bejárják kozmikus pályájukat a központi csillag körül.',
+    'gallery.card2.title': 'Bolygók Részletei',
+    'gallery.card2.description': 'Merüljön el a bolygók részleteiben, az atmoszférikus összetételtől kezdve a felszíni jellemzőkig.',
+    'gallery.card3.title': 'Pályamechanika',
+    'gallery.card3.description': 'Figyelje meg a gravitációs erők komplex kölcsönhatását, amely meghatározza az égitestek pályáját.',
+    'gallery.card4.title': 'Kozmikus Jelenségek',
+    'gallery.card4.description': 'Csodálja meg az életre keltett űrjelenségeket lenyűgöző vizuális effektusainkkal.',
 
     // Development
     'development.title': 'Fejlesztési Folyamat',
@@ -106,6 +122,14 @@ const translations = {
 
     // Gallery
     'gallery.title': 'Galerie',
+    'gallery.card1.title': 'Danse Céleste',
+    'gallery.card1.description': 'Découvrez le ballet orbital envoûtant des planètes alors qu\'elles parcourent leurs trajectoires cosmiques autour de l\'étoile centrale.',
+    'gallery.card2.title': 'Détails Planétaires',
+    'gallery.card2.description': 'Plongez dans les détails intimes de chaque planète, des compositions atmosphériques aux caractéristiques de surface.',
+    'gallery.card3.title': 'Mécanique Orbitale',
+    'gallery.card3.description': 'Observez l\'interaction complexe des forces gravitationnelles qui façonnent les trajectoires des corps célestes.',
+    'gallery.card4.title': 'Phénomènes Cosmiques',
+    'gallery.card4.description': 'Admirez les effets visuels spectaculaires qui donnent vie aux phénomènes spatiaux dans notre simulation.',
 
     // Development
     'development.title': 'Processus de Développement',
