@@ -69,12 +69,22 @@ const CTAButton = styled(motion.button)`
   }
 `;
 
-const SecondaryButton = styled(CTAButton)`
+const SecondaryButton = styled(motion.a)`
   background: transparent;
   border: 1px solid var(--color-primary);
+  color: white;
+  padding: 1rem 2.5rem;
+  border-radius: 50px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  transition: transform 0.3s ease;
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
   
   &:hover {
     background: rgba(74, 158, 255, 0.1);
+    transform: translateY(-2px);
   }
 `;
 
@@ -120,7 +130,7 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.5, ease: "easeOut" }}
           >
-            <StyledSecondaryButton as="a" href="https://github.com/SandorMore/NemSzarCsapattalProjekt-Rare-#" target="_blank">
+            <StyledSecondaryButton href="https://github.com/SandorMore/NemSzarCsapattalProjekt-Rare-#" target="_blank" rel="noopener noreferrer">
               {t('hero.viewGithub')}
             </StyledSecondaryButton>
           </motion.div>
