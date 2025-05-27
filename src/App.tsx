@@ -9,7 +9,6 @@ import About from './components/About';
 import Features from './components/Features';
 import Gallery from './components/Gallery';
 import Development from './components/Development';
-import Footer from './components/Footer';
 import CubeNav from './components/CubeNav';
 import styled from '@emotion/styled';
 
@@ -45,7 +44,6 @@ const App = () => {
           <Section id="development">
             <Development />
           </Section>
-          <Footer />
         </main>
       </NavigationProvider>
     </LanguageProvider>
