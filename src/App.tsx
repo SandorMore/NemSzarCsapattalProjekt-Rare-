@@ -10,6 +10,17 @@ import Features from './components/Features';
 import Gallery from './components/Gallery';
 import Development from './components/Development';
 import Footer from './components/Footer';
+import CubeNav from './components/CubeNav';
+import styled from '@emotion/styled';
+
+const Section = styled.section`
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  scroll-margin-top: 50px;
+`;
 
 const App = () => {
   return (
@@ -17,13 +28,24 @@ const App = () => {
       <NavigationProvider>
         <LanguageSwitcher />
         <Global styles={globalStyles} />
+        <CubeNav />
         <main>
-          <div id="hero"><Hero /></div>
-          <div id="about"><About /></div>
-          <div id="features"><Features /></div>
-          <div id="gallery"><Gallery /></div>
-          <div id="development"><Development /></div>
-          <div id="footer"><Footer /></div>
+          <Section id="hero">
+            <Hero />
+          </Section>
+          <Section id="about">
+            <About />
+          </Section>
+          <Section id="features">
+            <Features />
+          </Section>
+          <Section id="gallery">
+            <Gallery />
+          </Section>
+          <Section id="development">
+            <Development />
+          </Section>
+          <Footer />
         </main>
       </NavigationProvider>
     </LanguageProvider>
