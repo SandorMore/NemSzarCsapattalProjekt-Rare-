@@ -55,7 +55,7 @@ const ButtonContainer = styled.div`
   justify-content: center;
 `;
 
-const CTAButton = styled(motion.button)`
+const CTAButton = styled(motion.a)`
   background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
   color: white;
   padding: 1rem 2.5rem;
@@ -63,6 +63,9 @@ const CTAButton = styled(motion.button)`
   font-size: 1.1rem;
   font-weight: 600;
   transition: transform 0.3s ease;
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
   
   &:hover {
     transform: translateY(-2px);
@@ -90,53 +93,47 @@ const SecondaryButton = styled(motion.a)`
 
 const Hero = () => {
   const { t } = useLanguage();
-  const StyledHeroSection = HeroSection as any;
-  const StyledHeroContent = HeroContent as any;
-  const StyledTitle = Title as any;
-  const StyledSubtitle = Subtitle as any;
-  const StyledCTAButton = CTAButton as any;
-  const StyledSecondaryButton = SecondaryButton as any;
-  const StyledButtonContainer = ButtonContainer as any;
 
   return (
-    <StyledHeroSection>
-      <StyledHeroContent>
-        <StyledTitle
+    <HeroSection>
+      <HeroContent>
+        <Title
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, ease: "easeOut" }}
+          transition={{ duration: 0.8 }}
         >
           {t('hero.title')}
-        </StyledTitle>
-        <StyledSubtitle
-          initial={{ opacity: 0, y: 30 }}
+        </Title>
+        <Subtitle
+          initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
+          transition={{ duration: 0.8, delay: 0.2 }}
         >
           {t('hero.subtitle')}
-        </StyledSubtitle>
-        <StyledButtonContainer>
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
+        </Subtitle>
+        <ButtonContainer>
+          <CTAButton
+            href="/Install/solar-system-install.zip"
+            download="solar-system-install.zip"
+            initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
+            transition={{ duration: 0.8, delay: 0.4 }}
           >
-            <StyledCTAButton>
-              {t('hero.install')}
-            </StyledCTAButton>
-          </motion.div>
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
+            {t('hero.install')}
+          </CTAButton>
+          <SecondaryButton
+            href="https://github.com/SandorMore/NemSzarCsapattalProjekt-Rare-#"
+            target="_blank"
+            rel="noopener noreferrer"
+            initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.5, ease: "easeOut" }}
+            transition={{ duration: 0.8, delay: 0.6 }}
           >
-            <StyledSecondaryButton href="https://github.com/SandorMore/NemSzarCsapattalProjekt-Rare-#" target="_blank" rel="noopener noreferrer">
-              {t('hero.viewGithub')}
-            </StyledSecondaryButton>
-          </motion.div>
-        </StyledButtonContainer>
-      </StyledHeroContent>
-    </StyledHeroSection>
+            {t('hero.viewGithub')}
+          </SecondaryButton>
+        </ButtonContainer>
+      </HeroContent>
+    </HeroSection>
   );
 };
 

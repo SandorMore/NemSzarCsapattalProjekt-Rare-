@@ -1,0 +1,18 @@
+Solar System Web Application Installation Guide
+
+1. System Requirements
+- Modern web browser (Chrome, Firefox, Safari, or Edge)
+- JavaScript enabled
+- WebGL support
+
+2. Installation Steps
+a) Extract all files from the zip archive
+b) Open index.html in your web browser
+c) Follow the on-screen instructions
+
+3. Usage
+- Use navigation controls to explore different sections
+- Click and drag to rotate view
+- Scroll to zoom in/out
+
+Thank you for installing our Solar System Web Application! 
