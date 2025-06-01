@@ -72,7 +72,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2494863639882449752, guid: a1de4014e097fa14f976db84f290bace, type: 3}
       propertyPath: m_Name
-      value: PlanetEarth
+      value: Earth
       objectReference: {fileID: 0}
     - target: {fileID: 3184525751272364258, guid: a1de4014e097fa14f976db84f290bace, type: 3}
       propertyPath: m_LocalPosition.x
@@ -113,6 +113,30 @@ PrefabInstance:
     - target: {fileID: 3184525751272364258, guid: a1de4014e097fa14f976db84f290bace, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5487142672576578548, guid: a1de4014e097fa14f976db84f290bace, type: 3}
+      propertyPath: mass
+      value: 5.9722e+24
+      objectReference: {fileID: 0}
+    - target: {fileID: 5487142672576578548, guid: a1de4014e097fa14f976db84f290bace, type: 3}
+      propertyPath: radius
+      value: 6371
+      objectReference: {fileID: 0}
+    - target: {fileID: 5487142672576578548, guid: a1de4014e097fa14f976db84f290bace, type: 3}
+      propertyPath: axisTilt
+      value: 23.44
+      objectReference: {fileID: 0}
+    - target: {fileID: 5487142672576578548, guid: a1de4014e097fa14f976db84f290bace, type: 3}
+      propertyPath: eccentricity
+      value: 0.016699999570846558
+      objectReference: {fileID: 0}
+    - target: {fileID: 5487142672576578548, guid: a1de4014e097fa14f976db84f290bace, type: 3}
+      propertyPath: semiMajorAxis
+      value: 149598000
+      objectReference: {fileID: 0}
+    - target: {fileID: 5487142672576578548, guid: a1de4014e097fa14f976db84f290bace, type: 3}
+      propertyPath: rotationPeriod
+      value: 23.9345
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:

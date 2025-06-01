@@ -10,7 +10,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2494863639882449752, guid: a1de4014e097fa14f976db84f290bace, type: 3}
       propertyPath: m_Name
-      value: PlanetNeptune
+      value: Neptune
       objectReference: {fileID: 0}
     - target: {fileID: 3184525751272364258, guid: a1de4014e097fa14f976db84f290bace, type: 3}
       propertyPath: m_LocalPosition.x
@@ -51,6 +51,30 @@ PrefabInstance:
     - target: {fileID: 3184525751272364258, guid: a1de4014e097fa14f976db84f290bace, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5487142672576578548, guid: a1de4014e097fa14f976db84f290bace, type: 3}
+      propertyPath: mass
+      value: 1.02409e+26
+      objectReference: {fileID: 0}
+    - target: {fileID: 5487142672576578548, guid: a1de4014e097fa14f976db84f290bace, type: 3}
+      propertyPath: radius
+      value: 24622
+      objectReference: {fileID: 0}
+    - target: {fileID: 5487142672576578548, guid: a1de4014e097fa14f976db84f290bace, type: 3}
+      propertyPath: axisTilt
+      value: 28.32
+      objectReference: {fileID: 0}
+    - target: {fileID: 5487142672576578548, guid: a1de4014e097fa14f976db84f290bace, type: 3}
+      propertyPath: eccentricity
+      value: 0.009700000286102295
+      objectReference: {fileID: 0}
+    - target: {fileID: 5487142672576578548, guid: a1de4014e097fa14f976db84f290bace, type: 3}
+      propertyPath: semiMajorAxis
+      value: 4514953000
+      objectReference: {fileID: 0}
+    - target: {fileID: 5487142672576578548, guid: a1de4014e097fa14f976db84f290bace, type: 3}
+      propertyPath: rotationPeriod
+      value: 16.11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:

@@ -114,6 +114,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5487142672576578548, guid: a1de4014e097fa14f976db84f290bace, type: 3}
+      propertyPath: mass
+      value: 1.89813e+27
+      objectReference: {fileID: 0}
+    - target: {fileID: 5487142672576578548, guid: a1de4014e097fa14f976db84f290bace, type: 3}
+      propertyPath: radius
+      value: 69911
+      objectReference: {fileID: 0}
+    - target: {fileID: 5487142672576578548, guid: a1de4014e097fa14f976db84f290bace, type: 3}
+      propertyPath: axisTilt
+      value: 3.13
+      objectReference: {fileID: 0}
+    - target: {fileID: 5487142672576578548, guid: a1de4014e097fa14f976db84f290bace, type: 3}
+      propertyPath: eccentricity
+      value: 0.048700001090765
+      objectReference: {fileID: 0}
+    - target: {fileID: 5487142672576578548, guid: a1de4014e097fa14f976db84f290bace, type: 3}
+      propertyPath: semiMajorAxis
+      value: 778479000
+      objectReference: {fileID: 0}
+    - target: {fileID: 5487142672576578548, guid: a1de4014e097fa14f976db84f290bace, type: 3}
+      propertyPath: rotationPeriod
+      value: 9.925
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 3061124284504361933, guid: a1de4014e097fa14f976db84f290bace, type: 3}

@@ -172,33 +172,9 @@ PrefabInstance:
       value: Saturn
       objectReference: {fileID: 0}
     - target: {fileID: 8384654706405455574, guid: b1dcf23f81a23c44a9e297ca797104cb, type: 3}
-      propertyPath: mass
-      value: 5.6832e+26
-      objectReference: {fileID: 0}
-    - target: {fileID: 8384654706405455574, guid: b1dcf23f81a23c44a9e297ca797104cb, type: 3}
-      propertyPath: radius
-      value: 58232
-      objectReference: {fileID: 0}
-    - target: {fileID: 8384654706405455574, guid: b1dcf23f81a23c44a9e297ca797104cb, type: 3}
-      propertyPath: axisTilt
-      value: 26.73
-      objectReference: {fileID: 0}
-    - target: {fileID: 8384654706405455574, guid: b1dcf23f81a23c44a9e297ca797104cb, type: 3}
       propertyPath: centralBody
       value: 
       objectReference: {fileID: 1617346361}
-    - target: {fileID: 8384654706405455574, guid: b1dcf23f81a23c44a9e297ca797104cb, type: 3}
-      propertyPath: eccentricity
-      value: 0.052000001072883606
-      objectReference: {fileID: 0}
-    - target: {fileID: 8384654706405455574, guid: b1dcf23f81a23c44a9e297ca797104cb, type: 3}
-      propertyPath: semiMajorAxis
-      value: 1432041000
-      objectReference: {fileID: 0}
-    - target: {fileID: 8384654706405455574, guid: b1dcf23f81a23c44a9e297ca797104cb, type: 3}
-      propertyPath: rotationPeriod
-      value: 10.656
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -463,33 +439,9 @@ PrefabInstance:
       value: Mercury
       objectReference: {fileID: 0}
     - target: {fileID: 4781383851087890221, guid: a09a1fe3bfe1b6c4e975a35b08efed7c, type: 3}
-      propertyPath: mass
-      value: 3.301e+23
-      objectReference: {fileID: 0}
-    - target: {fileID: 4781383851087890221, guid: a09a1fe3bfe1b6c4e975a35b08efed7c, type: 3}
-      propertyPath: radius
-      value: 2439.7
-      objectReference: {fileID: 0}
-    - target: {fileID: 4781383851087890221, guid: a09a1fe3bfe1b6c4e975a35b08efed7c, type: 3}
-      propertyPath: axisTilt
-      value: 0.034
-      objectReference: {fileID: 0}
-    - target: {fileID: 4781383851087890221, guid: a09a1fe3bfe1b6c4e975a35b08efed7c, type: 3}
       propertyPath: centralBody
       value: 
       objectReference: {fileID: 1617346361}
-    - target: {fileID: 4781383851087890221, guid: a09a1fe3bfe1b6c4e975a35b08efed7c, type: 3}
-      propertyPath: eccentricity
-      value: 0.20563068985939026
-      objectReference: {fileID: 0}
-    - target: {fileID: 4781383851087890221, guid: a09a1fe3bfe1b6c4e975a35b08efed7c, type: 3}
-      propertyPath: semiMajorAxis
-      value: 57909000
-      objectReference: {fileID: 0}
-    - target: {fileID: 4781383851087890221, guid: a09a1fe3bfe1b6c4e975a35b08efed7c, type: 3}
-      propertyPath: rotationPeriod
-      value: 1407.6
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -610,33 +562,9 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1626497161985211639, guid: 8b3fd356fed4c00489c88da6937bad1a, type: 3}
-      propertyPath: mass
-      value: 1.89813e+27
-      objectReference: {fileID: 0}
-    - target: {fileID: 1626497161985211639, guid: 8b3fd356fed4c00489c88da6937bad1a, type: 3}
-      propertyPath: radius
-      value: 69911
-      objectReference: {fileID: 0}
-    - target: {fileID: 1626497161985211639, guid: 8b3fd356fed4c00489c88da6937bad1a, type: 3}
-      propertyPath: axisTilt
-      value: 3.13
-      objectReference: {fileID: 0}
-    - target: {fileID: 1626497161985211639, guid: 8b3fd356fed4c00489c88da6937bad1a, type: 3}
       propertyPath: centralBody
       value: 
       objectReference: {fileID: 1617346361}
-    - target: {fileID: 1626497161985211639, guid: 8b3fd356fed4c00489c88da6937bad1a, type: 3}
-      propertyPath: eccentricity
-      value: 0.048700001090765
-      objectReference: {fileID: 0}
-    - target: {fileID: 1626497161985211639, guid: 8b3fd356fed4c00489c88da6937bad1a, type: 3}
-      propertyPath: semiMajorAxis
-      value: 778479000
-      objectReference: {fileID: 0}
-    - target: {fileID: 1626497161985211639, guid: 8b3fd356fed4c00489c88da6937bad1a, type: 3}
-      propertyPath: rotationPeriod
-      value: 9.925
-      objectReference: {fileID: 0}
     - target: {fileID: 8540497186259199969, guid: 8b3fd356fed4c00489c88da6937bad1a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 15
@@ -1055,33 +983,9 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 2513790547295614168, guid: 55ed30214491b684d86769ea6556bf9e, type: 3}
-      propertyPath: mass
-      value: 6.4169e+23
-      objectReference: {fileID: 0}
-    - target: {fileID: 2513790547295614168, guid: 55ed30214491b684d86769ea6556bf9e, type: 3}
-      propertyPath: radius
-      value: 3389.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2513790547295614168, guid: 55ed30214491b684d86769ea6556bf9e, type: 3}
-      propertyPath: axisTilt
-      value: 25.19
-      objectReference: {fileID: 0}
-    - target: {fileID: 2513790547295614168, guid: 55ed30214491b684d86769ea6556bf9e, type: 3}
       propertyPath: centralBody
       value: 
       objectReference: {fileID: 1617346361}
-    - target: {fileID: 2513790547295614168, guid: 55ed30214491b684d86769ea6556bf9e, type: 3}
-      propertyPath: eccentricity
-      value: 0.09350000321865082
-      objectReference: {fileID: 0}
-    - target: {fileID: 2513790547295614168, guid: 55ed30214491b684d86769ea6556bf9e, type: 3}
-      propertyPath: semiMajorAxis
-      value: 227956000
-      objectReference: {fileID: 0}
-    - target: {fileID: 2513790547295614168, guid: 55ed30214491b684d86769ea6556bf9e, type: 3}
-      propertyPath: rotationPeriod
-      value: 24.6229
-      objectReference: {fileID: 0}
     - target: {fileID: 4824847594728910798, guid: 55ed30214491b684d86769ea6556bf9e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 12
@@ -1774,33 +1678,9 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7807973972016253639, guid: 53e361e3dbfa4764aad6dadcca03a24b, type: 3}
-      propertyPath: mass
-      value: 8.6811e+25
-      objectReference: {fileID: 0}
-    - target: {fileID: 7807973972016253639, guid: 53e361e3dbfa4764aad6dadcca03a24b, type: 3}
-      propertyPath: radius
-      value: 25362
-      objectReference: {fileID: 0}
-    - target: {fileID: 7807973972016253639, guid: 53e361e3dbfa4764aad6dadcca03a24b, type: 3}
-      propertyPath: axisTilt
-      value: 82.23
-      objectReference: {fileID: 0}
-    - target: {fileID: 7807973972016253639, guid: 53e361e3dbfa4764aad6dadcca03a24b, type: 3}
       propertyPath: centralBody
       value: 
       objectReference: {fileID: 1617346361}
-    - target: {fileID: 7807973972016253639, guid: 53e361e3dbfa4764aad6dadcca03a24b, type: 3}
-      propertyPath: eccentricity
-      value: 0.04690000042319298
-      objectReference: {fileID: 0}
-    - target: {fileID: 7807973972016253639, guid: 53e361e3dbfa4764aad6dadcca03a24b, type: 3}
-      propertyPath: semiMajorAxis
-      value: 2867043000
-      objectReference: {fileID: 0}
-    - target: {fileID: 7807973972016253639, guid: 53e361e3dbfa4764aad6dadcca03a24b, type: 3}
-      propertyPath: rotationPeriod
-      value: -17.24
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1967,33 +1847,9 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1821539114427570887, guid: 683c466b1b3b5384fbe6f49fb29457fd, type: 3}
-      propertyPath: mass
-      value: 5.9722e+24
-      objectReference: {fileID: 0}
-    - target: {fileID: 1821539114427570887, guid: 683c466b1b3b5384fbe6f49fb29457fd, type: 3}
-      propertyPath: radius
-      value: 6371
-      objectReference: {fileID: 0}
-    - target: {fileID: 1821539114427570887, guid: 683c466b1b3b5384fbe6f49fb29457fd, type: 3}
-      propertyPath: axisTilt
-      value: 23.44
-      objectReference: {fileID: 0}
-    - target: {fileID: 1821539114427570887, guid: 683c466b1b3b5384fbe6f49fb29457fd, type: 3}
       propertyPath: centralBody
       value: 
       objectReference: {fileID: 1617346361}
-    - target: {fileID: 1821539114427570887, guid: 683c466b1b3b5384fbe6f49fb29457fd, type: 3}
-      propertyPath: eccentricity
-      value: 0.016699999570846558
-      objectReference: {fileID: 0}
-    - target: {fileID: 1821539114427570887, guid: 683c466b1b3b5384fbe6f49fb29457fd, type: 3}
-      propertyPath: semiMajorAxis
-      value: 149598000
-      objectReference: {fileID: 0}
-    - target: {fileID: 1821539114427570887, guid: 683c466b1b3b5384fbe6f49fb29457fd, type: 3}
-      propertyPath: rotationPeriod
-      value: 23.9345
-      objectReference: {fileID: 0}
     - target: {fileID: 8646592834990021227, guid: 683c466b1b3b5384fbe6f49fb29457fd, type: 3}
       propertyPath: m_Name
       value: Earth
@@ -2297,33 +2153,9 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6881067044410401213, guid: 9daa091550575a94b95b34a78269cec3, type: 3}
-      propertyPath: mass
-      value: 4.8673e+24
-      objectReference: {fileID: 0}
-    - target: {fileID: 6881067044410401213, guid: 9daa091550575a94b95b34a78269cec3, type: 3}
-      propertyPath: radius
-      value: 6051.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 6881067044410401213, guid: 9daa091550575a94b95b34a78269cec3, type: 3}
-      propertyPath: axisTilt
-      value: 177.36
-      objectReference: {fileID: 0}
-    - target: {fileID: 6881067044410401213, guid: 9daa091550575a94b95b34a78269cec3, type: 3}
       propertyPath: centralBody
       value: 
       objectReference: {fileID: 1617346361}
-    - target: {fileID: 6881067044410401213, guid: 9daa091550575a94b95b34a78269cec3, type: 3}
-      propertyPath: eccentricity
-      value: 0.006800000090152025
-      objectReference: {fileID: 0}
-    - target: {fileID: 6881067044410401213, guid: 9daa091550575a94b95b34a78269cec3, type: 3}
-      propertyPath: semiMajorAxis
-      value: 108210000
-      objectReference: {fileID: 0}
-    - target: {fileID: 6881067044410401213, guid: 9daa091550575a94b95b34a78269cec3, type: 3}
-      propertyPath: rotationPeriod
-      value: -5832.6
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2450,24 +2282,7 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5348065680232834818, guid: 6363be0f278391b46bfb9a6b4a9f75c4, type: 3}
-      propertyPath: mass
-      value: 1.9884e+30
-      objectReference: {fileID: 0}
-    - target: {fileID: 5348065680232834818, guid: 6363be0f278391b46bfb9a6b4a9f75c4, type: 3}
-      propertyPath: radius
-      value: 695700
-      objectReference: {fileID: 0}
-    - target: {fileID: 5348065680232834818, guid: 6363be0f278391b46bfb9a6b4a9f75c4, type: 3}
-      propertyPath: axisTilt
-      value: 7.25
-      objectReference: {fileID: 0}
-    - target: {fileID: 5348065680232834818, guid: 6363be0f278391b46bfb9a6b4a9f75c4, type: 3}
-      propertyPath: rotationPeriod
-      value: 609.12
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 271690742696752079, guid: 6363be0f278391b46bfb9a6b4a9f75c4, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -2738,33 +2553,9 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6404044197156767873, guid: a2ba20a43a8e0c84885e483bdc269cfe, type: 3}
-      propertyPath: mass
-      value: 1.02409e+26
-      objectReference: {fileID: 0}
-    - target: {fileID: 6404044197156767873, guid: a2ba20a43a8e0c84885e483bdc269cfe, type: 3}
-      propertyPath: radius
-      value: 24622
-      objectReference: {fileID: 0}
-    - target: {fileID: 6404044197156767873, guid: a2ba20a43a8e0c84885e483bdc269cfe, type: 3}
-      propertyPath: axisTilt
-      value: 28.32
-      objectReference: {fileID: 0}
-    - target: {fileID: 6404044197156767873, guid: a2ba20a43a8e0c84885e483bdc269cfe, type: 3}
       propertyPath: centralBody
       value: 
       objectReference: {fileID: 1617346361}
-    - target: {fileID: 6404044197156767873, guid: a2ba20a43a8e0c84885e483bdc269cfe, type: 3}
-      propertyPath: eccentricity
-      value: 0.009700000286102295
-      objectReference: {fileID: 0}
-    - target: {fileID: 6404044197156767873, guid: a2ba20a43a8e0c84885e483bdc269cfe, type: 3}
-      propertyPath: semiMajorAxis
-      value: 4514953000
-      objectReference: {fileID: 0}
-    - target: {fileID: 6404044197156767873, guid: a2ba20a43a8e0c84885e483bdc269cfe, type: 3}
-      propertyPath: rotationPeriod
-      value: 16.11
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
