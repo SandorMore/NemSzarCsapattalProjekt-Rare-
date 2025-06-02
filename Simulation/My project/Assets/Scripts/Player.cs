@@ -32,16 +32,15 @@ public class Player : MonoBehaviour
 
     void Update()
     {
-        
-        HandleRotation();
-        HandleSpeedMultiplier();
+        if (!planetFollower.isFollowingPlanet) {
+            HandleRotation();
+            HandleSpeedMultiplier();
+        }
         HandleMovement();
     }
 
     void HandleRotation()
     {
-        if (planetFollower.isFollowingPlanet) return;
-
         float mouseX = Input.GetAxis("Mouse X") * mouseSensitivity;
         float mouseY = Input.GetAxis("Mouse Y") * mouseSensitivity;
 
