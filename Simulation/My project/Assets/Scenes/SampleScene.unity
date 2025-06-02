@@ -1429,6 +1429,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeScale: 17280
+  timeScaleChangeSpeed: 1.5
+  minTimeScale: 1
   orbitResolution: 360
   scaleFactor: 0.0001
   orbitLineWidth: 100
@@ -1862,7 +1864,7 @@ MonoBehaviour:
   surfaceDistance: 10
   zoomSpeed: 10
   minSurfaceDistance: 2
-  maxSurfaceDistance: 100
+  maxSurfaceDistance: 200
   isFollowingPlanet: 0
 --- !u!1001 &1073871611
 PrefabInstance:

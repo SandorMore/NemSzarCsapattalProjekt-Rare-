@@ -4,8 +4,6 @@ public class PlanetFollower : MonoBehaviour
 {
     private GameObject[] planets;
     private int currentPlanetIndex = -1;
-    private Vector3 lastPlayerPosition;
-    private Vector3 cameraOffset = new Vector3(5.7921824f, 2.84f, 0);
     private Camera mainCamera;
 
     [Header("Camera Settings")]
@@ -15,7 +13,7 @@ public class PlanetFollower : MonoBehaviour
     public float surfaceDistance = 10f;
     public float zoomSpeed = 10f;
     public float minSurfaceDistance = 2f;
-    public float maxSurfaceDistance = 100f;
+    public float maxSurfaceDistance = 200f;
 
     private float currentRotationX = 0f;
     private float currentRotationY = 0f;
@@ -97,8 +95,6 @@ public class PlanetFollower : MonoBehaviour
                 mainCamera.transform.LookAt(orbitCenter);
             }
         }
-
-        lastPlayerPosition = transform.position;
     }
 
     private void ResetCameraRotation()
