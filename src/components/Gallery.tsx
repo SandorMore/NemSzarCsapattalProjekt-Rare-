@@ -24,24 +24,24 @@ const Gallery = () => {
 
   const galleryItems = [
     {
-      image: "/screenshot1.jpg",
+      image: "/main.png",
       title: "Celestial Dance",
       description: "Experience the mesmerizing orbital ballet of planets as they traverse their cosmic paths around the central star."
     },
     {
-      image: "/screenshot2.jpg",
-      title: "Planetary Details",
-      description: "Dive deep into the intricate details of each planet, from atmospheric compositions to surface features."
+      image: "/development.png",
+      title: "Development Insights",
+      description: "Developed with Unity, this simulation showcases the intricate details of planetary systems and their gravitational interactions."
     },
     {
-      image: "/screenshot3.jpg",
-      title: "Orbital Mechanics",
-      description: "Witness the complex interplay of gravitational forces that shape the paths of celestial bodies."
+      image: "/code.png",
+      title: "Gravitational Mechanics",
+      description: "Dive into the physics behind the simulation, where custom algorithms calculate gravitational forces and orbital dynamics."
     },
     {
-      image: "/screenshot4.jpg",
-      title: "Cosmic Phenomena",
-      description: "Marvel at the stunning visual effects that bring space phenomena to life in our simulation."
+      image: "/GitHub.png",
+      title: "Open Source Project",
+      description: "Explore the source code on GitHub to understand the underlying mechanics and contribute to the project."
     }
   ];
 

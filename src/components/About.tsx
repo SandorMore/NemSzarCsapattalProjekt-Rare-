@@ -84,7 +84,7 @@ const About = () => {
           animate={inView ? { opacity: 1, scale: 1 } : {}}
           transition={{ duration: 1 }}
         >
-          <img src="/simulation-preview.jpg" alt="Planetary System Simulation Preview" />
+          <img src="/main.png" alt="Planetary System Simulation Preview" />
         </StyledImageContainer>
       </StyledContainer>
     </StyledAboutSection>
