@@ -367,7 +367,7 @@ Camera:
     width: 1
     height: 1
   near clip plane: 0.3
-  far clip plane: 1000
+  far clip plane: 1e+30
   field of view: 60
   orthographic: 0
   orthographic size: 5
@@ -1428,10 +1428,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d1affa7c9634864eb33552e8d7311ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeScale: 3153600
+  timeScale: 17280
   orbitResolution: 360
-  scaleFactor: 0.00001
-  orbitLineWidth: 2
+  scaleFactor: 0.0001
+  orbitLineWidth: 100
 --- !u!1 &832575517
 GameObject:
   m_ObjectHideFlags: 0
@@ -1699,6 +1699,7 @@ GameObject:
   - component: {fileID: 990944077}
   - component: {fileID: 990944076}
   - component: {fileID: 990944080}
+  - component: {fileID: 990944082}
   - component: {fileID: 990944081}
   m_Layer: 0
   m_Name: Player
@@ -1809,8 +1810,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 350897aa46cacb9468f193dd551b896b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 5
+  baseSpeed: 50
+  speedChangeRate: 10
   mouseSensitivity: 2
+  verticalSpeed: 3
+  minSpeedMultiplier: 0.1
+  maxSpeedMultiplier: 100000
+  speedMultiplierStep: 1.5
 --- !u!54 &990944081
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1838,6 +1844,26 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 1
+--- !u!114 &990944082
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 990944072}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b311b2b998699b428cde1fca8eb2f36, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotationSpeed: 100
+  minVerticalAngle: -80
+  maxVerticalAngle: 80
+  surfaceDistance: 10
+  zoomSpeed: 10
+  minSurfaceDistance: 2
+  maxSurfaceDistance: 100
+  isFollowingPlanet: 0
 --- !u!1001 &1073871611
 PrefabInstance:
   m_ObjectHideFlags: 0

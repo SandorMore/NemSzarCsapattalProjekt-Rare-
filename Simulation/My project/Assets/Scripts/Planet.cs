@@ -1,11 +1,11 @@
 using UnityEngine;
 
-public class OrbitalBody : MonoBehaviour
+public class Planet : MonoBehaviour
 {
     [Header("Orbital Parameters")]
 
     [Tooltip("The body this object orbits around (e.g., Sun for planets, Earth for Moon)")]
-    public OrbitalBody centralBody;
+    public Planet centralBody;
 
     [Tooltip("Semi-major axis in kilometers")]
     public double semiMajorAxis = 0; // km (149.598e6 for Earth)
@@ -34,30 +34,29 @@ public class OrbitalBody : MonoBehaviour
     private void Start()
     {
         orbitLine = GetComponent<LineRenderer>();
-        
-        if (orbitLine != null)
-        {
-            orbitLine.useWorldSpace = true;
-            orbitLine.loop = true;
-            orbitLine.positionCount = SimulationManager.Instance.orbitResolution;
-            orbitLine.startWidth = SimulationManager.Instance.orbitLineWidth;
-            orbitLine.endWidth = SimulationManager.Instance.orbitLineWidth;
-
-            DrawOrbit();
-        }
 
         transform.rotation = Quaternion.Euler(0, 0, axisTilt);
         
-        if (radius > 0)
+        if (orbitLine != null)
         {
-            float scale = (float)(radius * SimulationManager.Instance.scaleFactor);
-            transform.localScale = new Vector3(scale, scale, scale);
+            if (centralBody == null) {
+                orbitLine.startWidth = 0;
+                orbitLine.endWidth = 0;
+            }
+
+            orbitLine.useWorldSpace = true;
+            orbitLine.loop = true;
+            orbitLine.positionCount = SimulationManager.Instance.orbitResolution;
         }
+        
+        UpdateScale();
     }
 
     private void Update()
     {
         currentTime += Time.deltaTime * SimulationManager.Instance.timeScale;
+
+        UpdateScale();
 
         if (centralBody != null)
         {
@@ -113,22 +112,41 @@ public class OrbitalBody : MonoBehaviour
     {
         if (centralBody == null || orbitLine == null) return;
 
+        orbitLine.startWidth = SimulationManager.Instance.orbitLineWidth;
+        orbitLine.endWidth = SimulationManager.Instance.orbitLineWidth;
+
         double semiMinorAxis = semiMajorAxis * System.Math.Sqrt(1 - eccentricity * eccentricity);
+        double focusDistance = semiMajorAxis * eccentricity;
 
         for (int i = 0; i < SimulationManager.Instance.orbitResolution; i++)
         {
             double angle = (i * 2 * System.Math.PI) / SimulationManager.Instance.orbitResolution;
             
-            double x = semiMajorAxis * System.Math.Cos(angle);
-            double y = semiMinorAxis * System.Math.Sin(angle);
+            double trueAnomaly = angle;
+            
+            double radius = semiMajorAxis * (1 - eccentricity * eccentricity) / (1 + eccentricity * System.Math.Cos(trueAnomaly));
+            
+            double x = radius * System.Math.Cos(trueAnomaly);
+            double y = radius * System.Math.Sin(trueAnomaly);
             
             Vector3 position = centralBody.transform.position + new Vector3(
                 (float)(x * SimulationManager.Instance.scaleFactor),
-                0,
+                -SimulationManager.Instance.orbitLineWidth,
                 (float)(y * SimulationManager.Instance.scaleFactor)
             );
             
             orbitLine.SetPosition(i, position);
         }
+    }
+
+    public void UpdateScale()
+    {
+        if (radius > 0)
+        {
+            float scale = (float)(radius * SimulationManager.Instance.scaleFactor);
+            transform.localScale = new Vector3(scale, scale, scale);
+        }
+
+        DrawOrbit();
     }
 }
