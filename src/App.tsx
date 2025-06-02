@@ -1,9 +1,7 @@
 import React from 'react';
 import { Global } from '@emotion/react';
 import { globalStyles } from './styles/GlobalStyles';
-import { LanguageProvider } from './context/LanguageContext';
 import { NavigationProvider } from './context/NavigationContext';
-import LanguageSwitcher from './components/LanguageSwitcher';
 import Hero from './components/Hero';
 import About from './components/About';
 import Features from './components/Features';
@@ -59,40 +57,37 @@ const ContentWrapper = styled.div`
 
 const App = () => {
   return (
-    <LanguageProvider>
-      <NavigationProvider>
-        <LanguageSwitcher />
-        <Global styles={globalStyles} />
-        <CubeNav />
-        <MainContainer>
-          <Section id="hero">
-            <ContentWrapper>
-              <Hero />
-            </ContentWrapper>
-          </Section>
-          <Section id="about">
-            <ContentWrapper>
-              <About />
-            </ContentWrapper>
-          </Section>
-          <Section id="features">
-            <ContentWrapper>
-              <Features />
-            </ContentWrapper>
-          </Section>
-          <Section id="gallery">
-            <ContentWrapper>
-              <Gallery />
-            </ContentWrapper>
-          </Section>
-          <Section id="development">
-            <ContentWrapper>
-              <Development />
-            </ContentWrapper>
-          </Section>
-        </MainContainer>
-      </NavigationProvider>
-    </LanguageProvider>
+    <NavigationProvider>
+      <Global styles={globalStyles} />
+      <CubeNav />
+      <MainContainer>
+        <Section id="hero">
+          <ContentWrapper>
+            <Hero />
+          </ContentWrapper>
+        </Section>
+        <Section id="about">
+          <ContentWrapper>
+            <About />
+          </ContentWrapper>
+        </Section>
+        <Section id="features">
+          <ContentWrapper>
+            <Features />
+          </ContentWrapper>
+        </Section>
+        <Section id="gallery">
+          <ContentWrapper>
+            <Gallery />
+          </ContentWrapper>
+        </Section>
+        <Section id="development">
+          <ContentWrapper>
+            <Development />
+          </ContentWrapper>
+        </Section>
+      </MainContainer>
+    </NavigationProvider>
   );
 };
 
